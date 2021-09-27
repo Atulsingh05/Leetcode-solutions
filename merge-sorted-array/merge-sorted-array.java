@@ -7,6 +7,7 @@ class Solution {
             if(p1>=0 && nums1[p1]>nums2[p2])
             {
                 nums1[i--]=nums1[p1--];
+    // In the post-decrement, value is first used in an expression and then decremented.]
             }
             else
             {
