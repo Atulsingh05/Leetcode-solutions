@@ -27,3 +27,23 @@ class Solution {
         return head;
     }
 }
+
+
+
+
+class Solution 
+{
+    public ListNode reverseList(ListNode head)
+    {
+        ListNode dummyNode = null;
+        while (head != null) 
+        {
+            ListNode next = head.next;
+            head.next = dummyNode;//pointing head to null
+            dummyNode = head;
+            head = next;
+        }
+        return dummyNode;//till head become null and next become null and dummy reaches to last node.
+        //then return dummy node.
+    }
+}
